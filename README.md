@@ -12,6 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 ​
   - _[Elk Playbook File](Ansible/Ansible_ELK_install.yml)_
 ​
+
 This document contains the following details:
 - Description of the Topologu
 - Access Policies
@@ -38,6 +39,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 ​
 The configuration details of each machine may be found below.
 ​
+
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
@@ -58,6 +60,7 @@ Machines within the network can only be accessed by `Ansible container`.
 ​
 A summary of the access policies in place can be found in the table below.
 ​
+
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box |     Yes             | 10.0.0.1 10.0.0.2    |
@@ -81,7 +84,8 @@ The playbook implements the following tasks:
 ​
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 ​
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+(Images/docker_ps_output.png)
 ​
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -90,8 +94,9 @@ This ELK server is configured to monitor the following machines:
 Private Ip of Web-1: 10.0.0.5  
     - Public IP of Web-2: 52.183.5.201
 Private IP of Web-2: 10.0.0.6
-    - Public Ip of Web-3: 52.183.5.201  
+    - Public Ip of Web-3:52.183.5.201 
 Private IP of Web-3: 10.0.0.7
+
 ​
 We have installed the following Beats on these machines:
 - _Specify which Beats you successfully installed_
@@ -127,5 +132,3 @@ _Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
   - http://157.55.197.62:5601
 ​
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-`ansible-playbook my-playbook.yml`
