@@ -2,7 +2,7 @@
 
 ### The files in this repository were used to configure the network depicted below.
 
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/Diagrams/Elk-Stack-Project-Diagram.png)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Diagram/Marlens-Diagram-Project1.png)
 ```diff
 The files/playbooks listed below have been tested and used to generate a live ELK deployment on Azure. They can be used
 to either recreate the entire deployment pictured above. Alternatively, these files can be modified to install only
