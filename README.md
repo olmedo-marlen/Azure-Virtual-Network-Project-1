@@ -61,7 +61,7 @@ metrics / metadata can be recorded please see the below link.
 | Web1 - DVWA      | WebServer         | 10.0.0.5/16       | Ubuntu Server (18.04-LTS) Linux |
 | Web2 - DVWA      | WebServer         | 10.0.0.6/16       | Ubuntu Server (18.04-LTS) Linux |
 | Web3 - DVWA      | WebServer         | 10.0.0.7/16       | Ubuntu Server (18.04-LTS) Linux |
-| Elk Server       | SysLog            | 10.1.0.4/16       | Ubuntu Server (18.04-LTS) Linux |
+| Elk Server       | SysLog            | 10.2.0.4/16       | Ubuntu Server (18.04-LTS) Linux |
 
 # Access Policies
 ```diff
@@ -94,7 +94,7 @@ JumpBox 10.0.0.4/16
 | Name                         | Publicly Accessible | Allowed IP Addresses    |
 | -----------------------------|:-------------------:|:-----------------------:|
 | Elk-Server/Kibana            | Yes                 | X.X.X.X:5601            |
-| Ansible (Bastion)/Elk-Server | No                  | 10.0.0.4:22             |
+| Ansible (Bastion)/Elk-Server | No                  | 10.2.0.4:22             |
 
 
 # **Elk Configuration**
@@ -302,5 +302,5 @@ Use the following URL in your browser to verify both Public and Private access a
 **If successful you should see the following log events in Kibana**
 ![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/Filebeat.png)
 
-# CONGRADULATIONS ON YOUR DEPLOYMENT!!!
+# CONGRATULATIONS ON YOUR DEPLOYMENT!!!
 ![](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
