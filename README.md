@@ -8,9 +8,9 @@ The files/playbooks listed below have been tested and used to generate a live EL
 to either recreate the entire deployment pictured above. Alternatively, these files can be modified to install only
 certain pieces of it; such as Filebeat/Metricbeat or any other Beats desired.
 ```
-- [CLICK to view - Elk-Server-Deployment Playbook](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/elk-server-deployment.yml)
-- [CLICK to view - FileBeat Deployment Playbook](Ansible/filebeat-playbook.yml)
-- [CLICK to view - MetricBeat Deployment Playbook](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/metricbeat-playbook.yml)
+- [CLICK to view - Elk-Server-Deployment Playbook](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/elk-server-deployment.yml)
+- [CLICK to view - FileBeat Deployment Playbook](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/filebeat-playbook.yml)
+- [CLICK to view - MetricBeat Deployment Playbook](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/metricbeat-playbook.yml)
 
 **This document contains the following details:**
 - **Description of the Topology**
@@ -183,7 +183,7 @@ create dashboards to monitor Azure Metrics such as the following:
 
 # Using the Playbook! You could say the below is a... Play by Play?... 😂
 
-![](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/ezgif-6-f88aa07dc25f.gif)
+![](http://gph.is/22kNw3m)
 ```diff
 In order to use the playbook, you will need to have an Ansible control node already configured, in this deployment the
 ansible control node was located on the **Bastion Host / Jumpbox**. Assuming you have such a control node provisioned,
