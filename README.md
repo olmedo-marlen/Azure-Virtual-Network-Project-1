@@ -114,7 +114,7 @@ necessary to use Ansible's Playbooks.
     - **Enable's Docker service on boot**
 
 **The following screenshot displays the result of running docker ps -a (List all containers) after successfully configuring the ELK instance.**
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/ElkServerAutomation.png?raw=true)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/ElkServerAutomation.png)
 
 **Target Machines & Beats**
 - **This ELK server is configured to monitor the following machines:**
@@ -192,14 +192,14 @@ SSH into the control node and follow the steps below:
 ```diff
 1. Copy the Elk-Server-Deployment.yml file to /etc/ansible/ directory. (This file is your playbook)
 ```
-   - [CLICK to view - Elk-Server-Deployment.yml](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/elk-server-deployment.yml)
+   - [CLICK to view - Elk-Server-Deployment.yml](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/elk-server-deployment.yml)
 ```diff
 2. On line 107 of the Ansible.cfg file you will see the entry remoteuser="username" make sure to change this to the
 username of your admin account on the elk server.
 *note - The stock configuration should be sufficient for most users, but there may be reasons you would want to
 change them.
 ```
-   - [CLICK to view - Ansible.cfg](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/Ansible.cfg)
+   - [CLICK to view - Ansible.cfg](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/Ansible.cfg)
 ```diff
 3. Make sure to update the Ansible "hosts" file to include the [elk] group, the elk server IP Address(s) and the
 Ansible Interpreter.  This is not your system hosts file but the ansible specific hosts file located in the
@@ -226,7 +226,7 @@ configurations to.
 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 ```
-   - [CLICK to view - Ansible Hosts File](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/hosts)
+   - [CLICK to view - Ansible Hosts File](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/hosts)
 ```diff
 4. Navigate to the /etc/ansible directory where the playbook is located.  
 Use the following command on your terminal to run the playbook
@@ -234,7 +234,7 @@ Use the following command on your terminal to run the playbook
 ```
 
 **You should see similar output to what is in the below screenshot.**
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/PlaybookOutput.png)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/PlaybookOutput.png)
 
 ```diff
 5. Verification of deployment.
@@ -244,7 +244,7 @@ Once you are in the elk-server command line run the following command.
     - sudo docker ps -a
 ```
 **If successful you should see the following output displaying the sebp/elk:761 docker container...**
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/ElkServerAutomation.png)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/ElkServerAutomation.png)
 
 ```diff
 6. To verify that your ELK Docker has been deployed up and running properly you will connect to Kibana.
@@ -255,7 +255,7 @@ on port 5601.  Use the following URL in your browser to verify both Public and P
 ```
 
 **If successful you should see the following output displaying the Kibana landing page**
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/Kibana.png)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/Kibana.png)
 
 
 # **Let's get the heart of our deployment BEATING!** ❤️
@@ -272,10 +272,10 @@ The deployment is very similar to the above instructions on deploying the elk-se
 1. Copy the filebeat-configuration.yml & the filebeat-playbook.yml to the /etc/ansible/files directory.
    Copy the metricbeat-configuration.yml & the metricbeat-playbook.yml to the /etc/ansible/files directory.
 ```
-   - [CLICK to view - Filebeat-Configuration.yml](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/filebeat-configuration.yml)
-   - [CLICK to view - Filebeat-Playbook.yml](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/filebeat-playbook.yml)
-   - [CLICK to view - Metricbeat-Confgiuration.yml](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/metricbeat-configuration.yml)
-   - [CLICK to view - Metricbeat-Playbook.yml](https://github.com/IrishLuck1/CyberSec/blob/main/Ansible/metricbeat-playbook.yml)
+   - [CLICK to view - Filebeat-Configuration.yml](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/filebeat-configuration.yml)
+   - [CLICK to view - Filebeat-Playbook.yml](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/filebeat-playbook.yml)
+   - [CLICK to view - Metricbeat-Confgiuration.yml](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/metricbeat-configuration.yml)
+   - [CLICK to view - Metricbeat-Playbook.yml](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Ansible/metricbeat-playbook.yml)
 ```diff
 2. From the /etc/ansible/files/ directory then run the following command to launch the filebeat-playbook.
     - ansible-playbook filebeat-playbook.yml
@@ -286,7 +286,7 @@ The deployment is very similar to the above instructions on deploying the elk-se
 ```
 **The below screen shot displays only the installation of filebeat but the output will be the same for metricbeat but
 instead of saying filebeat it'll say metricbeat during the process.**
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/filebeatinstall.png)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/filebeatinstall.png)
 ```diff
 4. After both playbooks have successfully run SSH into each webserver and verify Filebeat/Metricbeat installation
 by running a ls command and you should see both .deb files installed listed below.
@@ -300,7 +300,7 @@ Use the following URL in your browser to verify both Public and Private access a
     - http://X.X.X.X:5601   (X.X.X.X  is your Public IP if configured to have Public Access)
 ```
 **If successful you should see the following log events in Kibana**
-![alt text](https://github.com/IrishLuck1/CyberSec/blob/main/ScreenShots/Filebeat.png)
+![alt text](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/Filebeat.png)
 
 # CONGRATULATIONS ON YOUR DEPLOYMENT!!!
 ![](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif)
