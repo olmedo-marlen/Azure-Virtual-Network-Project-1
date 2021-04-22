@@ -183,7 +183,7 @@ create dashboards to monitor Azure Metrics such as the following:
 
 # Using the Playbook! You could say the below is a... Play by Play?... 😂
 
-![](http://gph.is/22kNw3m)
+![](https://github.com/olmedo-marlen/Azure-Virtual-Network-Project-1/blob/main/Screenshots/unicorn%20gif.gif)
 ```diff
 In order to use the playbook, you will need to have an Ansible control node already configured, in this deployment the
 ansible control node was located on the **Bastion Host / Jumpbox**. Assuming you have such a control node provisioned,
